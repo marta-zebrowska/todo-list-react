@@ -41,6 +41,7 @@ export const Button = styled.button`
     toggleDone &&
     css`
       background-color: ${({ theme }) => theme.color.parsley};
+      color: ${({ theme }) => theme.color.white};
       transition: 0.4s;
 
       &:hover {
