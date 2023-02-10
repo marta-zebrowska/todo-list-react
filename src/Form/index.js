@@ -16,10 +16,7 @@ const Form = ({ addNewTask }) => {
 
     addNewTask(trimmedNewTaskContent);
     setNewTaskContent("");
-  };
-
-  const focusInput = () => {
-    inputRef.Ref.current.focus();
+    inputRef.current.focus();
   };
 
   return (
@@ -31,7 +28,7 @@ const Form = ({ addNewTask }) => {
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      <Button onClick={focusInput}>Dodaj zadanie</Button>
+      <Button>Dodaj zadanie</Button>
     </StyledForm>
   );
 };
