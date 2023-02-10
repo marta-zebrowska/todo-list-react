@@ -7,16 +7,16 @@ const Form = ({ addNewTask }) => {
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    
+
     const trimmedNewTaskContent = newTaskContent.trim();
-    
+
     if (!trimmedNewTaskContent) {
-      return
+      return;
     }
-    
+
     addNewTask(trimmedNewTaskContent);
     setNewTaskContent("");
-  }
+  };
 
   const focusInput = () => {
     inputRef.Ref.current.focus();
