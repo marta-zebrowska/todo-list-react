@@ -22,6 +22,7 @@ The project was created as part of the YouCode programming course, to improve my
 - GRID
 - MARKDOWN
 - CREATE REACT APP (HOOKS, HANDLING EVENTS, STYLED COMPONENTS, STYLED ICONS)
+- REDUX
 
 ## Available Scripts
 
