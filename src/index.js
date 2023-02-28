@@ -5,28 +5,6 @@ import App from "./App";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";
-import { configureStore } from "@reduxjs/toolkit";
-
-const initialState = {
-  tasks: [],
-};
-
-const tasksReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "addTask":
-      return {
-        ...state,
-        tasks: [
-          ...state.tasks,
-          {
-            content: action.payload,
-          },
-        ],
-      };
-    default:  
-      return state;
-  }
-};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
