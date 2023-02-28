@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import App from "./App";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import { GlobalStyle } from "./GlobalStyle";
@@ -23,13 +23,10 @@ const tasksReducer = (state = initialState, action) => {
           },
         ],
       };
-    default:
+    default:  
       return state;
   }
 };
-
-const store = configureStore({ reducer: tasksReducer });
-console.log(store.getState());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
