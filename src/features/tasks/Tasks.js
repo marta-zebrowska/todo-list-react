@@ -14,9 +14,7 @@ const { tasks } = useSelector(selectTasks);
 
   const {
     removeTask,
-    toggleTaskDone,
     setAllDone,
-    addNewTask,
   } = useTasks();
 
   return (
@@ -24,7 +22,7 @@ const { tasks } = useSelector(selectTasks);
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
+        body={<Form />}
       />
 
       <Section
@@ -32,7 +30,6 @@ const { tasks } = useSelector(selectTasks);
         body={
           <TaskList
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
