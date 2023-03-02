@@ -12,10 +12,6 @@ import { selectTasks } from "./tasksSlice";
 function Tasks() {
 const { tasks } = useSelector(selectTasks);
 
-  const {
-    setAllDone,
-  } = useTasks();
-
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -32,7 +28,6 @@ const { tasks } = useSelector(selectTasks);
         }
         extraHeaderContent={
           <Buttons
-            setAllDone={setAllDone}
           />
         }
       />
