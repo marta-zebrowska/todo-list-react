@@ -18,11 +18,10 @@ function Tasks() {
       <Section
         title="Lista zadań"
         body={
-          <TaskList
-          />
+          <TaskList />
         }
         extraHeaderContent={
-          <Buttons/>
+          <Buttons />
         }
       />
     </Container>
