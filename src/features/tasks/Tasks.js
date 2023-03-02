@@ -13,7 +13,6 @@ function Tasks() {
 const { tasks } = useSelector(selectTasks);
 
   const {
-    removeTask,
     setAllDone,
   } = useTasks();
 
@@ -29,7 +28,6 @@ const { tasks } = useSelector(selectTasks);
         title="Lista zadań"
         body={
           <TaskList
-            removeTask={removeTask}
           />
         }
         extraHeaderContent={
