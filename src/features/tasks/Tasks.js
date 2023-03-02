@@ -5,7 +5,6 @@ import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
-import { useTasks } from "../../useTasks";
 import { selectTasks } from "./tasksSlice";
 
 
