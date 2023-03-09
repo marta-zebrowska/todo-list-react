@@ -14,6 +14,7 @@ export const Item = styled.li`
   align-items: center;
   padding: 10px;
   padding-left: 0;
+  color: ${({ theme }) => theme.color.teal};
 
   ${({ hidden }) =>
     hidden &&
