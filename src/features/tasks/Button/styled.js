@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
+export default styled.button`
   background-color: transparent;
   color: ${({ theme }) => theme.color.teal};
   border: none;
