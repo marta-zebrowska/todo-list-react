@@ -6,7 +6,7 @@ import {
   toggleHideDone,
   setAllDone,
 } from "../tasksSlice";
-import { StyledButton } from "../Button/styled";
+import StyledButton from "../Button/styled";
 import { Wrapper } from "./styled";
 
 const Buttons = () => {

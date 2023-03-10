@@ -1,6 +1,19 @@
-import { takeEvery, call, put, delay } from "redux-saga/effects";
+import {
+  takeEvery,
+  takeLatest,
+  call,
+  put,
+  delay,
+  select,
+} from "redux-saga/effects";
 import { getExampleTasks } from "./getExampleTasks";
-import { fetchExampleTasks, fetchExampleTasksError, fetchExampleTasksSuccess } from "./tasksSlice";
+import { saveTasksInLocalStorage } from "./tasksLocalStorage";
+import {
+  fetchExampleTasks,
+  fetchExampleTasksError,
+  fetchExampleTasksSuccess,
+  selectTasks,
+} from "./tasksSlice";
 
 function* fetchExampleTasksHandler() {
   try {
@@ -13,7 +26,12 @@ function* fetchExampleTasksHandler() {
   }
 }
 
-export function* watchFetchExampleTasks() {
-  console.log("Saga jest podłączona!");
-  yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
+function* saveTasksInLocalStorageHandler() {
+  const tasks = yield select(selectTasks);
+  yield call(saveTasksInLocalStorage, tasks);
+}
+
+export function* tasksSaga() {
+  yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
+  yield takeEvery("*", saveTasksInLocalStorageHandler())
 }
