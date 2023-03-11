@@ -33,5 +33,5 @@ function* saveTasksInLocalStorageHandler() {
 
 export function* tasksSaga() {
   yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
-  yield takeEvery("*", saveTasksInLocalStorageHandler())
+  yield takeEvery("*", saveTasksInLocalStorageHandler)
 }
