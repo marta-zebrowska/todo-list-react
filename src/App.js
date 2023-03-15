@@ -7,18 +7,18 @@ export default () => (
     <nav>
       <ul>
         <li>
-          <Link to="/zadania">Zadania</Link>
+          <Link to="/autor">O autorze</Link>
         </li>
         <li>
-          <Link to="/autor">O autorze</Link>
+          <Link to="/zadania">Zadania</Link>
         </li>
       </ul>
       <Switch>
-        <Route path="/zadania">
-          <Tasks />
-        </Route>
         <Route path="/autor">
           <Author />
+        </Route>
+        <Route path="/zadania">
+          <Tasks />
         </Route>
       </Switch>
     </nav>
