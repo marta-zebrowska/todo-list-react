@@ -5,6 +5,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import FetchExampleTasksButton from "./FetchExampleTasksButton";
+import Search from "./Search";
 
 function TasksPage() {
   return (
@@ -17,6 +18,12 @@ function TasksPage() {
         }
         body={<Form />}
       />
+      <Section
+        title="Wyszukiwarka"
+        body={
+          <Search />
+        }
+        />
 
       <Section
         title="Lista zadań"
