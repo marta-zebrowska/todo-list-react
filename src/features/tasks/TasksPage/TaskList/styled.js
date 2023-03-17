@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -69,3 +70,8 @@ export const Button = styled.button`
       }
     `}
 `;
+
+export const StyledLink = styled(Link)`
+text-decoration: none;
+color: teal;
+`
