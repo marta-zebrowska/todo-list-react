@@ -9,7 +9,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
 
-  &.${activeClassName} {
+  &${activeClassName} {
     font-weight: bold;
   }
   &:hover {
