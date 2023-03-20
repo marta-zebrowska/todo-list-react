@@ -4,7 +4,7 @@
 https://marta-zebrowska.github.io/todo-list-react/
 
 
-<img src="https://github.com/marta-zebrowska/todo-list-react/blob/main/public/chrome-capture-2023-0-11.gif" alt="presentation">
+<img src="https://github.com/marta-zebrowska/todo-list-react/blob/main/public/presentation.gif" alt="presentation">
 
 ## Description
 This is a to-do list tool so you don't forget anything. 
