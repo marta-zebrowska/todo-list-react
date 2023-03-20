@@ -13,6 +13,7 @@ export default () => {
         value: target.value.trim() !== "" ? target.value : undefined,
     });
   };
+  
   return (
     <Input
       placeholder="Filtruj zadania"

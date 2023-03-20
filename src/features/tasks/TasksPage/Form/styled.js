@@ -12,12 +12,6 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const StyledInput = styled.input`
-  border: 2px solid ${({ theme }) => theme.color.gallery};
-  padding: 10px;
-  width: 100%;
-`;
-
 export const Button = styled.button`
   padding: 10px;
   background-color: ${({ theme }) => theme.color.teal};
