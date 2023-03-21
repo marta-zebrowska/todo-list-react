@@ -1,4 +1,3 @@
-import { useHistory, useLocation } from "react-router-dom";
 import Input from "../../Input";
 import {
   useQueryParameter,
