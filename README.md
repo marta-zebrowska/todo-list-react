@@ -12,10 +12,10 @@ Here you can add tasks to the list, mark if they are done and delete if necessar
 The project was created as part of the YouCode programming course, to improve my coding skills.
 
 ## Technoligies used:
-- HTML,
-- CSS,
-- BEM convention,
-- JAVASCRIPT ES6,
+- HTML
+- CSS
+- BEM convention
+- JAVASCRIPT ES6
 - GIT
 - FLEX
 - MEDIA QUERIES
@@ -23,6 +23,9 @@ The project was created as part of the YouCode programming course, to improve my
 - MARKDOWN
 - CREATE REACT APP (HOOKS, HANDLING EVENTS, STYLED COMPONENTS, STYLED ICONS)
 - REACT-REDUX
+- REDUX-SAGA
+- REACT-ROUTER
+- LOCAL STORAGE
 
 ## Available Scripts
 
