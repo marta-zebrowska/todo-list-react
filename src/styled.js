@@ -6,12 +6,14 @@ const activeClassName = "link-active";
 export const StyledNavLink = styled(NavLink).attrs(() => ({
   activeClassName,
 }))`
-  &.${activeClassName} {
-    font-weight: bold;
-  }
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
+
   &:hover {
     border-bottom: 1px solid;
+  }
+
+  &.${activeClassName} {
+    font-weight: bold;
   }
 `;
