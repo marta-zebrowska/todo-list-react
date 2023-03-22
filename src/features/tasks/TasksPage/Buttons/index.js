@@ -13,6 +13,7 @@ const Buttons = () => {
   const { tasks, hideDone } = useSelector(selectTasksState);
   const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
   const dispatch = useDispatch();
+  
   return (
     <Wrapper>
       {tasks.length > 0 && (
